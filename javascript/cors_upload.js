@@ -98,7 +98,7 @@ var MediaUploader = function(options) {
   var noop = function() {};
   this.file = options.file;
   this.contentType = options.contentType || this.file.type || 'application/octet-stream';
-  this.metadata = options.metadata || {
+  this.metadata = options.metadata ||     
     'title': this.file.name,
     'mimeType': this.contentType
   };
